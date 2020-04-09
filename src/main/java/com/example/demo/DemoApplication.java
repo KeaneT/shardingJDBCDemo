@@ -41,4 +41,9 @@ public class DemoApplication {
         }
     }
 
+    @PostMapping("/deleteAll")
+    public void deleteAll() {
+        orderService.deleteAll();
+    }
+
 }
